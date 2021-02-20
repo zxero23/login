@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+
+main{
+    min-height:100vh;
+    background: linear-gradient(to right top,#65dfc9,#6cdbeb);    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+
+}
+
+.vidrio{
+    background: white;
+    min-height:40vh;
+    width:20%;
+    background: linear-gradient(to right bottom,rgb(33,23,191,0.15),rgb(255,255,255,0.3));
+    border-radius: 2vh;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    overflow: hidden;
+    
+}
+
+.parent{
+    height:50vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    ;
+}
+
+
+
+.titulo{
+    padding-top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
+
+.usuario , .contrasenia{
+    padding-bottom: 10px;
+}
+
+
+
+.botonLogin{
+    background-color: transparent;
+    border-radius: 18px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 7px 25px;
+    
+}
+
+.botonLogin:hover{
+    background: linear-gradient(to right bottom,rgb(255,255,255,0.8),rgb(255,255,255,0.3));
+    color: #6cdbeb;
+}
+
+.botonLogin:active {
+	position:relative;
+	top:1px;
+}
+
+@media only screen and (max-width: 600px){
+    .vidrio{
+        width:80%;
+
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .vidrio{
+        width:80%;
+
+    }
+}
+
